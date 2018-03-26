@@ -1,3 +1,7 @@
+
+Mario Chaves Caballero
+------------------------------------------------------------------
+
 # PRÁCTICA 1: PRESENTACIÓN Y PREPARACIÓN DE HERRAMIENTAS
 
 Esta práctica consistirá en preparar las herramientas que se utilizarán en las siguientes prácticas.
