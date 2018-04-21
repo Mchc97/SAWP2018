@@ -84,7 +84,7 @@ Probamos que ha ido bien la instalación con el comando `sudo /usr/sbin/haproxy 
 
 ## Benchmark con haproxy
 
-Ahora vamos a testear el balanceo con haproxy. Hemos realizado una prueba con una carga de 20000 peticiones con una concurrencia de 50, todo ello con el comando `ab -n 20000 -c 50 http://192.168.2.121/index.html` 
+Ahora vamos a testear el balanceo con haproxy. Hemos realizado una prueba con una carga de 20000 peticiones con una concurrencia de 50, todo ello con el comando `ab -n 20000 -c 50 http://192.168.2.103/index.html` 
 
 ![enter image description here](https://raw.githubusercontent.com/jchermoso/swap_jchermoso/master/practica3/Captura%20de%20pantalla%20de%202018-04-21%2019-23-23.png)
 
