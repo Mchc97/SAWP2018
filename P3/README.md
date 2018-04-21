@@ -14,33 +14,31 @@ Además, hemos creado una tarjeta de red host-only con la dirección IP estátic
 
 Los comandos recomendados para la instalación de **nginx** por parte del guión son:
 
-    `sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove`
+`sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove`
     
-    La cual sirve para actualizar el sistema y eliminar archivos sin utilidades.
+La cual sirve para actualizar el sistema y eliminar archivos sin utilidades.
 
-![img]()
+![img](https://github.com/Mchc97/SAWP2018/blob/master/P3/Limpieza.png)
 
-    `sudo apt-get install nginx`
+`sudo apt-get install nginx`
 
-    Con este comando se instala el servidor web **nginx**.
+Con este comando se instala el servidor web **nginx**.
 
-![img]()
+![img](https://github.com/Mchc97/SAWP2018/blob/master/P3/Instalacion.png)
 
 `sudo systemctl start nginx`
 
-    Con este comando se inicia el servidor **nginx**.
+Con este comando se inicia el servidor **nginx**.
 
-![img]()
+![img](https://github.com/Mchc97/SAWP2018/blob/master/P3/Iniciar.png)
 
-
-------------------------------------------------------------------------------------------
 
 ## Configurar nginx como balanceador
 
 Para confifurar nginx como balanceador tenemos que cambiar el contenido del fichero `/etc/nginx/conf.d/default.conf` o crearlo. Si el fichero ya existe tenemos que eliminar todo su contenido y cambiarlo por:
 
 
-![img]()
+![img](https://github.com/Mchc97/SAWP2018/blob/master/P3/Confnginx.png)
 
 
 A continuación reiniciamos **nginx** para que la configuración se guarde.
@@ -49,11 +47,11 @@ Luego hemos comprobado si la configuración funciona correctamente conectando co
 
 cURL desde balanceador a máquina1:
 
-![img]()
+![img](https://github.com/Mchc97/SAWP2018/blob/master/P3/ComprobacionBa1.png)
 
 cURL desde balanceador a máquina2:
 
-![img]()
+![img](https://github.com/Mchc97/SAWP2018/blob/master/P3/ComprobacionBa2.png)
 
 En nuestro caso no hemos puesto peso a ninguna máquina ya que las dos tienen las mismas capacidades (son clonadas), hemos hecho que la carga que viene desde la misma dirección IP la gestione el mismo servidor final con `ip_hash` y hemos puesto que durate 5 segundos solo se tenga que hacer una sola conexión por la que llegarán las peticiones **HTTP** con `keepalive 5`, en vez de crear una conexión por petición.
 
@@ -64,7 +62,7 @@ Primero tenemos que crear otra máquina de la misma forma como hemos creado la m
 
 La orden que hemos utilizado ha sido `ab -n 20000 -c 50 http://192.168.56.103/index.html`, y como resultado ha sido este:
 
-![img]()
+![img](https://github.com/Mchc97/SAWP2018/blob/master/P3/Benchmark.png)
 
 
 ## Instalación y configuración de haproxy
