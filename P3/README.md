@@ -80,7 +80,9 @@ Seguidamente, entramos en el archivo `/etc/haproxy/haproxy.cfg` y lo editamos, d
 
 Probamos que ha ido bien la instalación con el comando `sudo /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg`
 
-![enter image description here](https://raw.githubusercontent.com/jchermoso/swap_jchermoso/master/practica3/Captura%20de%20pantalla%20de%202018-04-19%2013-16-47.png)Como no ha dado avisos y errores, es que ha ido bien.
+![enter image description here](https://raw.githubusercontent.com/jchermoso/swap_jchermoso/master/practica3/Captura%20de%20pantalla%20de%202018-04-19%2013-16-47.png)
+
+Como no ha dado avisos y errores, es que ha ido bien.
 
 ## Benchmark con haproxy
 
