@@ -40,6 +40,7 @@ Para confifurar nginx como balanceador tenemos que cambiar el contenido del fich
 
 ![img](https://github.com/Mchc97/SAWP2018/blob/master/P3/Confnginx.png)
 
+En nuestro caso no hemos puesto peso a ninguna máquina ya que las dos tienen las mismas capacidades (son clonadas), hemos hecho que la carga que viene desde la misma dirección IP la gestione el mismo servidor final con `ip_hash` y hemos puesto que durate 5 segundos solo se tenga que hacer una sola conexión por la que llegarán las peticiones **HTTP** con `keepalive 5`, en vez de crear una conexión por petición.
 
 A continuación reiniciamos **nginx** para que la configuración se guarde.
 
@@ -47,8 +48,6 @@ Luego hemos comprobado si la configuración funciona correctamente conectando co
 
 ![img](https://github.com/Mchc97/SAWP2018/blob/master/P3/Comprobacionesnginx.png)
 
-
-En nuestro caso no hemos puesto peso a ninguna máquina ya que las dos tienen las mismas capacidades (son clonadas), hemos hecho que la carga que viene desde la misma dirección IP la gestione el mismo servidor final con `ip_hash` y hemos puesto que durate 5 segundos solo se tenga que hacer una sola conexión por la que llegarán las peticiones **HTTP** con `keepalive 5`, en vez de crear una conexión por petición.
 
 
 ## Benchmark en nginx
