@@ -93,3 +93,4 @@ Ahora vamos a testear el balanceo con haproxy. Hemos realizado una prueba con un
 
 ## Conclusiones
 
+Como podemos comprobar, nginx resulta mejor balanceador ya que el tiempo en el que se tarda en realizar las peticiones es mucho menor, además, se puede comprobar que los datos a pasar en nginx son mucho menores que en haproxy.
