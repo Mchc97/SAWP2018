@@ -45,13 +45,8 @@ A continuación reiniciamos **nginx** para que la configuración se guarde.
 
 Luego hemos comprobado si la configuración funciona correctamente conectando con las máquinas finales mediante cURL:
 
-cURL desde balanceador a máquina1:
+![img](https://github.com/Mchc97/SAWP2018/blob/master/P3/Comprobacionesnginx.png)
 
-![img](https://github.com/Mchc97/SAWP2018/blob/master/P3/ComprobacionBa1.png)
-
-cURL desde balanceador a máquina2:
-
-![img](https://github.com/Mchc97/SAWP2018/blob/master/P3/ComprobacionBa2.png)
 
 En nuestro caso no hemos puesto peso a ninguna máquina ya que las dos tienen las mismas capacidades (son clonadas), hemos hecho que la carga que viene desde la misma dirección IP la gestione el mismo servidor final con `ip_hash` y hemos puesto que durate 5 segundos solo se tenga que hacer una sola conexión por la que llegarán las peticiones **HTTP** con `keepalive 5`, en vez de crear una conexión por petición.
 
