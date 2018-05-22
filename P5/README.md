@@ -92,7 +92,6 @@ Y por último comprobamos el estado del esclavo  con `SHOW SLAVE STATUS\G` y com
 
 ![img](https://github.com/Mchc97/SAWP2018/blob/master/P5/photo_2018-05-22_11-51-41.jpg)
 ![img](https://github.com/Mchc97/SAWP2018/blob/master/P5/photo_2018-05-22_11-51-50.jpg)
-![img](https://github.com/Mchc97/SAWP2018/blob/master/P5/photo_2018-05-22_11-51-43.jpg)
 
 Y por último una comprobación de que los datos introducidos en la máquina maestra se duplican en la máquina esclava:
 
